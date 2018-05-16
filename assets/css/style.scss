@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+a:hover {
+  font-weight: normal;
+}
+
+h1 a:hover {
+  font-weight: bold;
+}
+
+a {
+  color: #ae0010;
+}
