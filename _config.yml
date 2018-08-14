@@ -11,10 +11,11 @@ theme: jekyll-theme-minimal
 plugins: []
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - doc/
+exclude: []
 
-# keep_files:
-#   - doc/
+# Copy to _site directory
+include:
+  - doc/
+  - doc/_images
+  - doc/_sources
+  - doc/_static
