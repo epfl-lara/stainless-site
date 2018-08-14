@@ -3,10 +3,10 @@ Stainless
 
 Stainless is a tool for verifying mostly functional programs developed by [LARA](http://lara.epfl.ch) at EPFL. Stainless accepts as its inputs programs in a subset of [Scala](https://www.scala-lang.org/). Stainless can verify that your program is correct for _all inputs_ and it can also report counterexample inputs for invalid programs (see error reports for [ConcRope.scala](invalid/BadConcRope.html), [ListOperations.scala](invalid/ListOperations.html), [Mean.scala](invalid/Mean.html), [PropositionalLogic.scala](invalid/PropositionalLogic.html), [AssociativityProperties.scala](invalid/AssociativityProperties.html), [InsertionSort.scala](invalid/InsertionSort.html), [more example reports](./programs.html), or check some of our [regression tests](https://github.com/epfl-lara/stainless/tree/master/frontends/benchmarks)).
 
-Main links:
+### Main links:
 
-- [https://github.com/epfl-lara/stainless](https://github.com/epfl-lara/stainless)
-- [Stainless Documentation](doc/intro.html)
+- [GitHub Repository](https://github.com/epfl-lara/stainless)
+- [Stainless Documentation](./doc/)
 - [Keynote: Tools for Verified Scala](https://youtu.be/d4VeFa0z_Lo)
 
 Stainless supports verifying:
