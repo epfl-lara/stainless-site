@@ -16,6 +16,3 @@ exclude: []
 # Copy to _site directory
 include:
   - doc/
-  - doc/_images
-  - doc/_sources
-  - doc/_static
