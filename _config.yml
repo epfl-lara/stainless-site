@@ -1,8 +1,8 @@
 title: Stainless
 description: Verification framework for a subset of the Scala programming language.
 
-baseurl: ""
-url: ""
+baseurl: "/stainless/"
+url: "https://epfl-lara.github.io"
 
 # Build settings
 markdown: kramdown
