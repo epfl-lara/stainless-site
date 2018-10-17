@@ -1,0 +1,176 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Stainless</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Vollkorn" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./screen.css">
+</head>
+
+<body>
+  <h1>Stainless</h1>
+
+  <p>
+    Stainless is a tool for verifying <a href="https://www.scala-lang.org/">Scala</a> programs (<a href="https://github.com/epfl-lara/stainless">GitHub repo</a>, <a href="https://epfl-lara.github.io/stainless/">documentation</a>). It is developed by <a href="http://lara.epfl.ch">LARA</a> at <a href="https://www.epfl.ch/">EPFL</a>'s
+    <a href="https://ic.epfl.ch/">School of Computer and Communication Sciences</a>.
+    Stainless can verify that your program is correct for <em>all inputs</em> and it can also report
+    inputs for which your program fails.
+  </p>
+
+<h2>NEWS: Verification of Smart Contracts and Clients</h2>
+
+<p>
+  We are particularly excited about the potential of Stainless in automated verification of smart contracts! We have created the following fork
+  of Stainless:
+</p>
+  <p>
+    <a href="https://github.com/epfl-lara/smart">https://github.com/epfl-lara/smart</a>
+  </p>
+<p>
+  which shows how to:
+<ul>
+  <li>write smart contracts in <a href="https://scala-lang.org/">Scala</a>;
+  <li>specify and prove properties of such programs, including precise reasoning about Uint256 data types;
+  <li>generate Solidity source code from Scala, which can then be compiled and deployed using the usual tools for the <a href="https://www.ethereum.org/">ethereum</a> software ecosystem.
+</ul>
+</p>
+
+  <p>For example, we have modeled and verified
+    <a href="https://github.com/SwissBorg/voting-token/tree/master/contracts">a voting smart contract</a>
+    developed by <a href="https://swissborg.com/en/">SwissBorg</a>
+    using Scala and Stainless (check <a href="https://github.com/epfl-lara/smart/tree/master/frontends/benchmarks/smartcontracts/valid/Voting">the corresponding benchmark</a>).
+
+  <p>For more information, check <a href="https://github.com/epfl-lara/smart/blob/master/README.md">the README.md</a>, as well as the
+    <a href="https://epfl-lara.github.io/smart/">online documentation</a> including
+    the page on <a href="https://epfl-lara.github.io/smart/smartcontracts.html">smart contracts in Stainless</a>.
+
+  <p>
+    Our verification efforts may prove useful in the future for companies such as
+    <a href="https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8">AXONI</a>
+    as well. A this stage, our open source implementation of
+    generator for Solidity is a proof of concept, which
+    helps understand the verification challenges as well as
+    differences and similarities of Solidity and Scala
+    programming models.
+  </p>
+
+<p>
+  Beyond verifying individual smart contracts, we are excited about the
+  potential of Stainless to establish properties of clients
+  and wallets for blockchain networks, such as
+  the <a href="https://github.com/input-output-hk/mantis">Mantis</a>
+  client written in Scala.
+</p>
+
+  <p>Finally, we are also interested in new programming models for smart contracts and understanding how they can further
+    increase the reliability and efficiency of decentralized systems.
+  </p>
+
+  <p>
+    This direction of work with Stainless is inspired by discussions within the
+    <a href="https://c4dt.org/">EPFL Center for Digital Trust</a> of which
+    our research group is a member.
+  </p>
+
+  <p>Stainless is the result of work of many contributors, see the
+    <a href="https://github.com/epfl-lara/stainless">main Stainless repository</a>.
+    Smart contract support is in particular due to the work of
+    <a href="https://people.epfl.ch/jad.hamza">Jad Hamza</a> and
+    <a href="https://people.epfl.ch/romain.jufer">Romain Jufer</a>.
+    For more information about Stainless for blockchain technologies, please contact
+    <a href="https://people.epfl.ch/jad.hamza">Jad</a> and
+    <a href="https://people.epfl.ch/viktor.kuncak">Viktor</a>.
+  </p>
+
+<h2>More about Stainless</h2>
+
+
+  <p>One can compare Stainless to proof assistants such
+    as <a href="https://isabelle.in.tum.de/">Isabelle/HOL</a>
+    and <a href="https://coq.inria.fr/">Coq</a> in terms of
+    the complexity of some of the program properties it can
+    prove. Stainless
+    can be more automated when finding proofs of programs compared to proof assistants,
+    and can also report counter-examples for
+    invalid properties in many non-trivial cases, see
+    counterexamples for bugs in benchmarks such as
+<a href="invalid/BadConcRope.html">ConcRope.scala</a></li>,
+<a href="invalid/ListOperations.html">ListOperations.scala</a></li>,
+<a href="invalid/Mean.html">Mean.scala</a>,
+<a href="invalid/PropositionalLogic.html">PropositionalLogic.scala</a>,
+<a href="invalid/AssociativityProperties.html">AssociativityProperties.scala</a>,
+<a href="invalid/InsertionSort.html">InsertionSort.scala</a>, <a href="./programs.html">more example reports</a>, or check some of our
+<a href="https://github.com/epfl-lara/stainless/tree/master/frontends/benchmarks/verification">regression tests</a>. On the other hand, proof assistants are much better
+at formalizing mathematics than Stainless, especially when it comes
+to libraries of formalized knowledge.
+</p>
+
+  <p>
+  Main links:
+  <ul>
+    <li><a href="https://github.com/epfl-lara/stainless">
+    https://github.com/epfl-lara/stainless</a></li>
+    <li><a href="https://github.com/epfl-lara/stainless/tree/master/core/src/sphinx/installation.rst">installation instructions file from the git repo</a>
+    <li><a href="https://youtu.be/d4VeFa0z_Lo">Keynote: Tools for Verified Scala</a></li>
+  </ul>
+  </p>
+
+  <p>Stainless supports verifying:
+  <ul>
+    <li>Assertions which should hold at the place where they are stated, but are checked statically</li>
+    <li>Postconditions using <strong>ensuring</strong> function: assertions for return values of functions</li>
+    <li>Preconditions using <strong>require</strong> function: assertions on function parameters</li>
+    <li>Loop invariants: inductive assertions that hold in each loop iteration after the while condition check passes</li>
+    <li>Algebraic data type class invariants: assertions on immutable parameters of constructors (which remain true for all constructed values)</li>
+    <li>Automatic checks done for the absence of runtime failures: completeness of pattern matching, division by zero, array bounds checks, map domain checks</li>
+  </ul>
+  </p>
+
+  <p>Stainless ensures that the input program belongs to a subset of Scala. This subset syntactically prevents:</p>
+  <ul>
+    <li>the creation of null values or unininitalized local variables or fields (therefore, dereferencing fields in Stainless programs cannot lead to null dereference error)</li>
+    <li>explicitly throwing an exception.</li>
+  </ul>
+
+  <p>The choice of the subset of Scala along with the checks for runtime errors rules out most known sources of errors in Scala programs. An exception are resource exhaustion errors (but see resource bound analysis in Leon documentation below).</p>
+
+  <p>Stainless correctly models integral types such as <em>Int</em> with an appropriate level of bits and takes overflow into account (for unbounded integers, use <em>BigInt</em>).</p>
+
+  <p>Stainless performs non-trivial termination checks for its functions and supports specifying decreasing measure functions.</p>
+
+  <h2>Inox</h2>
+
+  <p>
+    Stainless derives its verification power from the <strong>Inox</strong> constraint solver for purely functional recursive constraints:
+  </p>
+  <ul>
+    <li><a href="https://github.com/epfl-lara/inox">
+    https://github.com/epfl-lara/inox</a>
+  </ul>
+  Inox makes use of SMT solvers <a href="https://github.com/Z3Prover/z3">Z3</a>, <a href="https://github.com/CVC4/CVC4">CVC4</a>, and <a href="http://www.philipp.ruemmer.org/princess.shtml">Princess</a>, and adds support for recursion, higher-order functions, its own support for quantifiers, as well as a form of dependent types.
+
+  <h2>Leon</h2>
+
+  <p>
+    Stainless and Inox grew out of a verification component of the
+    Leon system (<a href="https://github.com/epfl-lara/leon">Leon at GitHub</a>,
+    <a href="https://github.com/epfl-lara/leon/tree/master/src/sphinx">documentation</a>)
+    Stainless supports more Scala features than Leon and can
+    be much more effective for verification.  Leon has been
+    developed as a more experimental system and in addition
+    to verification, supports program synthesis, program
+    repair, C-code generation, as well as programming by
+    example. Leon also
+    has <a href="https://github.com/epfl-lara/leon-web">a
+    web interface called Leon Web, whose source code is
+    available</a>.
+  </p>
+
+  <hr>
+
+  <p>2018-09-28. This page is simple and this is its end.</p>
+</body>
+
+</html>
