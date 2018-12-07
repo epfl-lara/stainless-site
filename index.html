@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -19,75 +19,15 @@
     inputs for which your program fails.
   </p>
 
-<h2>NEWS: Verification of Smart Contracts and Clients</h2>
+<h2>Why Stainless</h2>
 
-<p>
-  We are excited about the potential of Stainless in automated verification of smart contracts. We have created the following fork
-  of Stainless:
-</p>
-  <p>
-    <a href="https://github.com/epfl-lara/smart">https://github.com/epfl-lara/smart</a>
-  </p>
-<p>
-  which shows how to:
-<ul>
-  <li>write smart contracts in <a href="https://scala-lang.org/">Scala</a>;
-  <li>specify and prove properties of such programs, including precise reasoning about Uint256 data types;
-  <li>generate Solidity source code from Scala, which can then be compiled and deployed using the usual tools for the <a href="https://www.ethereum.org/">ethereum</a> software ecosystem.
-</ul>
-</p>
-
-  <p>For example, we have modeled and verified
-    <a href="https://github.com/SwissBorg/voting-token/tree/master/contracts">a voting smart contract</a>
-    developed by <a href="https://swissborg.com/en/">SwissBorg</a>
-    using Scala and Stainless (check <a href="https://github.com/epfl-lara/smart/tree/master/frontends/benchmarks/smartcontracts/valid/Voting">the corresponding benchmark</a>).
-
-  <p>For more information, check <a href="https://github.com/epfl-lara/smart/blob/master/README.md">the README.md</a>, as well as the
-    <a href="https://epfl-lara.github.io/smart/">online documentation</a> including
-    the page on <a href="https://epfl-lara.github.io/smart/smartcontracts.html">smart contracts in Stainless</a>.
+  <p>Stainless is a way to use Scala to develop highly reliable applications, wich errors caught early during
+    the development process. Thanks to its use of proofs, Stainless can establish safety and termination
+    properties for all possible program inputs, improving substantially correctnes guarantees provided by
+    testing alone.</p>
 
   <p>
-    Our verification efforts may prove useful in the future for companies such as
-    <a href="https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8">AXONI</a>
-    as well. A this stage, our open source implementation of
-    generator for Solidity is a proof of concept, which
-    helps understand the verification challenges as well as
-    differences and similarities of Solidity and Scala
-    programming models.
-  </p>
-
-<p>
-  Beyond verifying individual smart contracts, we are excited about the
-  potential of Stainless to establish properties of clients
-  and wallets for blockchain networks, such as
-  the <a href="https://github.com/epfl-lara/mantis">Mantis</a>
-  client written in Scala as well as
-  <a href="https://github.com/epfl-lara/bitcoin-s-core">Bitcoin-S</a>.
-</p>
-
-  <p>Finally, we are also interested in new programming models for smart contracts and understanding how they can further
-    increase the reliability and efficiency of decentralized systems.
-  </p>
-
-  <p>
-    This direction of work with Stainless is inspired by discussions within the
-    <a href="https://c4dt.org/">EPFL Center for Digital Trust</a> of which
-    our research group is a member.
-  </p>
-
-  <p>Stainless is the result of work of many contributors, see the
-    <a href="https://github.com/epfl-lara/stainless">main Stainless repository</a>.
-    Smart contract support is in particular due to the work of
-    <a href="https://people.epfl.ch/jad.hamza">Jad Hamza</a> and
-    <a href="https://people.epfl.ch/romain.jufer">Romain Jufer</a>.
-    For more information about Stainless for blockchain technologies, please contact
-    <a href="https://people.epfl.ch/jad.hamza">Jad</a> and
-    <a href="https://people.epfl.ch/viktor.kuncak">Viktor</a>.
-  </p>
-
-<h2>More about Stainless</h2>
-
-  <p>One can compare Stainless to proof assistants such
+    One can compare Stainless to proof assistants such
     as <a href="https://isabelle.in.tum.de/">Isabelle/HOL</a>,
     <a href="https://coq.inria.fr/">Coq</a>, or
     <a href="https://en.wikipedia.org/wiki/ACL2">ACL2</a>
@@ -144,6 +84,72 @@ to libraries of formalized knowledge.
 
   <p>Stainless performs non-trivial termination checks for its functions and supports specifying decreasing measure functions.</p>
 
+  <h2>Application: Verification of Smart Contracts and Clients</h2>
+
+  <p>
+    We are excited about the potential of Stainless in automated verification of smart contracts. We have created the following fork
+    of Stainless:
+  </p>
+    <p>
+      <a href="https://github.com/epfl-lara/smart">https://github.com/epfl-lara/smart</a>
+    </p>
+  <p>
+    which shows how to:
+  <ul>
+    <li>write smart contracts in <a href="https://scala-lang.org/">Scala</a>;
+    <li>specify and prove properties of such programs, including precise reasoning about Uint256 data types;
+    <li>generate Solidity source code from Scala, which can then be compiled and deployed using the usual tools for the <a href="https://www.ethereum.org/">ethereum</a> software ecosystem.
+  </ul>
+  </p>
+
+    <p>For example, we have modeled and verified
+      <a href="https://github.com/SwissBorg/voting-token/tree/master/contracts">a voting smart contract</a>
+      developed by <a href="https://swissborg.com/en/">SwissBorg</a>
+      using Scala and Stainless (check <a href="https://github.com/epfl-lara/smart/tree/master/frontends/benchmarks/smartcontracts/valid/Voting">the corresponding benchmark</a>).
+
+    <p>For more information, check <a href="https://github.com/epfl-lara/smart/blob/master/README.md">the README.md</a>, as well as the
+      <a href="https://epfl-lara.github.io/smart/">online documentation</a> including
+      the page on <a href="https://epfl-lara.github.io/smart/smartcontracts.html">smart contracts in Stainless</a>.
+
+    <p>
+      Our verification efforts may prove useful in the future for companies such as
+      <a href="https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8">AXONI</a>
+      as well. A this stage, our open source implementation of
+      generator for Solidity is a proof of concept, which
+      helps understand the verification challenges as well as
+      differences and similarities of Solidity and Scala
+      programming models.
+    </p>
+
+  <p>
+    Beyond verifying individual smart contracts, we are excited about the
+    potential of Stainless to establish properties of clients
+    and wallets for blockchain networks, such as
+    the <a href="https://github.com/epfl-lara/mantis">Mantis</a>
+    client written in Scala as well as
+    <a href="https://github.com/epfl-lara/bitcoin-s-core">Bitcoin-S</a>.
+  </p>
+
+    <p>Finally, we are also interested in new programming models for smart contracts and understanding how they can further
+      increase the reliability and efficiency of decentralized systems.
+    </p>
+
+    <p>
+      This direction of work with Stainless is inspired by discussions within the
+      <a href="https://c4dt.org/">EPFL Center for Digital Trust</a> of which
+      our research group is a member.
+    </p>
+
+    <p>Stainless is the result of work of many contributors, see the
+      <a href="https://github.com/epfl-lara/stainless">main Stainless repository</a>.
+      Smart contract support is in particular due to the work of
+      <a href="https://people.epfl.ch/jad.hamza">Jad Hamza</a> and
+      <a href="https://people.epfl.ch/romain.jufer">Romain Jufer</a>.
+      For more information about Stainless for blockchain technologies, please contact
+      <a href="https://people.epfl.ch/jad.hamza">Jad</a> and
+      <a href="https://people.epfl.ch/viktor.kuncak">Viktor</a>.
+    </p>
+
   <h2>Inox</h2>
 
   <p>
@@ -167,14 +173,14 @@ to libraries of formalized knowledge.
     to verification, supports program synthesis, program
     repair, C-code generation, as well as programming by
     example. Leon also
-    has <a href="https://github.com/epfl-lara/leon-web">a
-    web interface called Leon Web, whose source code is
-    available</a>.
+    has
+    web interface called Leon Web, whose <a href="https://github.com/epfl-lara/leon-web">source code is
+    available</a>. We also occasionally <a href="https://leon.epfl.ch">run it as a limitted-bandwidth service</a>.
   </p>
 
   <hr>
 
-  <p>2018-09-28. This page is simple and this is its end.</p>
+  <p>2018-12-07. This page is simple and this is its end.</p>
 </body>
 
 </html>
