@@ -17,8 +17,10 @@
     Stainless is a tool for verifying <a href="https://www.scala-lang.org/">Scala</a> programs.
     Stainless is developed by <a href="http://lara.epfl.ch">LARA</a> at <a href="https://www.epfl.ch/">EPFL</a>'s
     <a href="https://ic.epfl.ch/">School of Computer and Communication Sciences</a>.
-    Stainless can verify that your program is correct for <em>all inputs</em> and it can also report
-    inputs for which your program fails.
+    Stainless can verify that your program is correct for <em>all inputs</em>, it can report
+    inputs for which your program fails when they exist, and it can prove that functions
+    do not loop. Using Stainless before running or deploying the software can eliminate
+    crashes, logical errors, security flaws, and other defects.
   </p>
 
 <h2>Main Links</h2>
@@ -64,7 +66,7 @@ at formalizing mathematics than Stainless, especially when it comes
 to libraries of formalized knowledge.
 </p>
 
-<h2>What Is Verified</h2>
+<h2>What Stainless Verifies</h2>
 
   <p>Stainless supports verifying:
   <ul>
@@ -89,10 +91,10 @@ to libraries of formalized knowledge.
 
   <p>Stainless performs non-trivial termination checks for its functions and supports specifying decreasing measure functions.</p>
 
-  <h2>Application: Verification of Smart Contracts and Clients</h2>
+  <h2>Example Application: Verification of Smart Contracts and Clients</h2>
 
   <p>
-    We are excited about the potential of Stainless in automated verification of smart contracts. We have created the following fork
+    As an example application, we can use Stainless in automated verification of smart contracts. We have created the following fork
     of Stainless:
   </p>
     <p>
@@ -185,7 +187,7 @@ to libraries of formalized knowledge.
 
   <hr>
 
-  <p>2018-12-07. This page is simple and this is its end.</p>
+  <p>2019-05-10. This page is simple and this is its end.</p>
 </body>
 
 </html>
