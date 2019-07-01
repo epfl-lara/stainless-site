@@ -1,9 +1,7 @@
-.PHONY: all serve
+.PHONY: build serve
 
-all:
+build:
 	sbt makeMicrosite
 
 serve:
-	cd target/site/
-	jekyll serve
-	open 'http://127.0.0.1:4000'
+	cd target/site/ && jekyll serve
