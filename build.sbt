@@ -8,7 +8,7 @@ lazy val site = project
     organizationHomepage := Some(url("https://lara.epfl.ch/w/")),
 
     micrositeName              := "Stainless",
-    micrositeDescription       := "Verification framework and tool for higher-order Scala programs",
+    micrositeDescription       := "Formal Verification for Scala",
 
     micrositeUrl               := "https://stainless.epfl.ch",
     micrositeBaseUrl           := "",
