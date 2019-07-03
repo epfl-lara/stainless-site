@@ -9,7 +9,13 @@ lazy val site = project
 
     micrositeName              := "Stainless",
     micrositeDescription       := "Verification framework and tool for higher-order Scala programs",
+
     micrositeUrl               := "https://stainless.epfl.ch",
+    micrositeBaseUrl           := "",
+
+    // micrositeUrl               := "https://romac.me",
+    // micrositeBaseUrl           := "/stainless-microsite",
+
     micrositeGithubOwner       := "epfl-lara",
     micrositeGithubRepo        := "stainless",
     micrositeShareOnSocial     := false,
@@ -27,9 +33,9 @@ lazy val site = project
     micrositeExternalIncludesDirectory := baseDirectory.value / "includes",
 
     micrositePalette := Map(
-      "brand-primary"   -> "#E05236",
-      "brand-secondary" -> "#3F3242",
-      "brand-tertiary"  -> "#2D232F",
+      "brand-primary"   -> "rgb(188, 34, 28)",
+      "brand-secondary" -> "#2F4F4F",
+      "brand-tertiary"  -> "#345858",
       "gray-dark"       -> "#453E46",
       "gray"            -> "#837F84",
       "gray-light"      -> "#E3E2E3",
