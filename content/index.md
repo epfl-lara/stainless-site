@@ -18,9 +18,10 @@ Main Links
 ----------
 
 * [https://github.com/epfl-lara/stainless](https://github.com/epfl-lara/stainless)
-(includes relases that need just headless OpenJDK JRE 8, [like this one for Ubuntu 18 on x64](./java-8-openjdk-amd64.tar.xz))
-* Console Debian vdmk Image: [vdmk.xz](DebianConsoleJRE-stainless-0.2.vmdk.xz) (tested with [VirtualBox](https://www.virtualbox.org/) but should work elsehwere)
-* [Documentation](https://epfl-lara.github.io/stainless/installation.html)
+* [Releases](https://github.com/epfl-lara/stainless/releases) which only need headless OpenJDK JRE 8
+* [Console Debian vdmk image](/DebianConsoleJRE-stainless-0.2.vmdk.xz) (tested with [VirtualBox](https://www.virtualbox.org/) but should work elsehwere)
+* [Documentation](https://epfl-lara.github.io/stainless)
+* [Installation](https://epfl-lara.github.io/stainless/installation.html)
 
 Why Stainless
 -------------
@@ -48,7 +49,7 @@ Stainless ensures that the input program belongs to a subset of Scala. This subs
 
 The choice of the subset of Scala along with the checks for runtime errors rules out most known sources of errors in Scala programs. An exception are resource exhaustion errors (but see resource bound analysis in Leon documentation below).
 
-Stainless correctly models integral types such as _Int_ with an appropriate level of bits and takes overflow into account (for unbounded integers, use _BigInt_).
+Stainless correctly models integral types such as `Int` with an appropriate level of bits and takes overflow into account (for unbounded integers, use `BigInt`).
 
 Stainless performs non-trivial termination checks for its functions and supports specifying decreasing measure functions.
 

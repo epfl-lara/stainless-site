@@ -18,6 +18,7 @@ lazy val site = project
 
     micrositeGithubOwner       := "epfl-lara",
     micrositeGithubRepo        := "stainless",
+    micrositeGitterChannel     := true,
     micrositeShareOnSocial     := false,
     micrositeDocumentationUrl  := "https://epfl-lara.github.io/stainless/",
     micrositeCompilingDocsTool := WithMdoc,
@@ -31,6 +32,8 @@ lazy val site = project
     micrositeStaticDirectory           := baseDirectory.value / "static",
     micrositeExternalLayoutsDirectory  := baseDirectory.value / "layouts",
     micrositeExternalIncludesDirectory := baseDirectory.value / "includes",
+
+    micrositeFooterText := None,
 
     micrositePalette := Map(
       "brand-primary"   -> "rgb(188, 34, 28)",
