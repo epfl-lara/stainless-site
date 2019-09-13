@@ -18,8 +18,8 @@ Main Links
 ----------
 
 * [https://github.com/epfl-lara/stainless](https://github.com/epfl-lara/stainless)
-* [Releases](https://github.com/epfl-lara/stainless/releases) which only need headless OpenJDK JRE 8
-* [Console Debian vdmk image](/DebianConsoleJRE-stainless-0.2.vmdk.xz) (tested with [VirtualBox](https://www.virtualbox.org/) but should work elsehwere)
+* [Releases](https://github.com/epfl-lara/stainless/releases) (only requires OpenJDK JRE 8 or above)
+* [Docker image](https://github.com/romac/stainless/packages/21998) ([How to install Docker](https://docs.docker.com/get-started/))
 * [Documentation](https://epfl-lara.github.io/stainless)
 * [Installation](https://epfl-lara.github.io/stainless/installation.html)
 
