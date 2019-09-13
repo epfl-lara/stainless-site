@@ -1,3 +1,2 @@
 
-Please see the website at: [https://epfl-lara.github.io/stainless](https://epfl-lara.github.io/stainless)
-
+Please see the website at: [https://stainless.epfl.ch](https://stainless.epfl.ch)
