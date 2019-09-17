@@ -1,0 +1,11 @@
+name: Stainless
+baseurl: ''
+description: Formal Verification for Scala
+highlighter: rouge
+docs: true
+collections:
+  tut:
+    output: true
+version: 0.1.0-SNAPSHOT
+org: EPFL-LARA
+markdown: kramdown
