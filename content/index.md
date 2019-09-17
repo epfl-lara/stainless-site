@@ -17,11 +17,11 @@ Stainless is a tool for verifying [Scala](https://www.scala-lang.org/) programs.
 Main Links
 ----------
 
-* [https://github.com/epfl-lara/stainless](https://github.com/epfl-lara/stainless)
+* [GitHub](https://github.com/epfl-lara/stainless)
 * [Releases](https://github.com/epfl-lara/stainless/releases) (only requires OpenJDK JRE 8 or above)
 * [Docker image](https://github.com/romac/stainless/packages/21998) ([How to install Docker](https://docs.docker.com/get-started/))
+* [Full installation instructions](https://epfl-lara.github.io/stainless/installation.html) (standalone, Docker, sbt, Metals)
 * [Documentation](https://epfl-lara.github.io/stainless)
-* [Installation](https://epfl-lara.github.io/stainless/installation.html)
 
 Why Stainless
 -------------
