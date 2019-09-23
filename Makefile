@@ -8,8 +8,8 @@ serve:
 
 gh-pages:
 	cd target/site && \
-	rm -rf .git && \
 	git init && \
+	git checkout -f gh-pages && \
 	git add . && \
 	git commit -am "Update website" && \
-	git push -f git@github.com:epfl-lara/stainless-site.git master:gh-pages
+	git push git@github.com:epfl-lara/stainless-site.git master:gh-pages
